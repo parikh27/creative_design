@@ -2,6 +2,7 @@ import React from 'react';
 import "./app.css"
 import Buttonsdesign from './components/Buttonsdesign/Buttonsdesign';
 import Radiobuttonsdesign from './components/Radiobuttonsdesign/Radiobuttonsdesign';
+import Checkboxdesign from './components/Checkboxdesign/Checkboxdesign';
 
 function App(props) {
   return (
@@ -11,6 +12,9 @@ function App(props) {
     </div>
     <div class="Radio_buttons">
       <Radiobuttonsdesign></Radiobuttonsdesign>
+    </div>
+    <div class="Checkboxes">
+      <Checkboxdesign></Checkboxdesign>
     </div>
     </div>
 
