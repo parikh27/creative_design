@@ -1,0 +1,47 @@
+.card_1 {
+  height: auto;
+  width: auto;
+  background: linear-gradient(#01212e, rgb(42, 41, 41)) #01212e;
+  /* border:  1px solid rgb(149, 204, 204); */
+  border-radius: 20px;
+  padding: 10px;
+  .head {
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    color: rgb(169, 189, 196);
+    font-family: "EB Garamond", serif;
+    letter-spacing: 1px;
+  }
+  .button_8_text_body {
+    height: auto;
+    width: auto;
+    color: rgb(142, 138, 138);
+    margin: -20px 0px;
+    font-size: 16px;
+    padding: 0px 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .card_button {
+    button {
+      height: 40px;
+      width: 150px;
+      color: rgb(214, 209, 209);
+      /* background-color: rgb(56, 86, 86); */
+      background-color: transparent;
+      font-weight: 500;
+      font-size: 18px;
+      border-radius: 30px;
+      margin: 30px 0px;
+      outline: none;
+      border: 1px solid aqua;
+      cursor: pointer;
+      &:hover {
+        color: rgb(162, 207, 217);
+      }
+    }
+  }
+}
