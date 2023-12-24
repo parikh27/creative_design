@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Cardsdesign from './components/Cardsdesign'
+import Buttonsdesign from './components/Buttonsdesign/Buttonsdesign';
+import Radiobuttonsdesign from './components/Radiobuttonsdesign/Radiobuttonsdesign';
+
 
 
 function App() {
@@ -10,13 +13,27 @@ function App() {
 
   return (
    <div>
-    <div class="Card-section">
+    
+    <div class="wrapper">
+      <div class="Card-section">
       <Cardsdesign></Cardsdesign>
     
+    </div>
+    <div class="Custom_design">
+      <Buttonsdesign></Buttonsdesign>
+    </div>
+    <div class="Radio_buttons">
+      <Radiobuttonsdesign></Radiobuttonsdesign>
+    </div>
     </div>
    </div>
      
   )
-}
 
-export default App
+}
+  
+
+
+export default App;
+
+
