@@ -1,0 +1,285 @@
+.main_card_wrapper {
+  height: auto;
+  width: 100%;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+
+
+  .card_titles_wrapper {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+      
+   .company_logo_img {
+      height: 120px;
+      width: 120px;
+      // background-color: rgb(251, 248, 248);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .company_logo_img_1 {
+      height: 100px;
+      width: 150px;
+      display: flex;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(9, 9, 9);
+      animation: animate 0.8s infinite;
+      animation-direction: alternate;
+      box-shadow: 5px 5px 2px rgb(99, 98, 98);
+    }
+  }
+
+  .company_logo_img_1 {
+    img {
+      height: 70%;
+      width: 70%;
+      object-fit: contain;
+      transform: translateY(0px);
+      animation: animate_1 6s  infinite;
+      animation-direction: alternate-reverse;
+    }
+  }
+  @keyframes animate_1 {
+    from {
+      transform: translateY(0px), scale(1, 1);
+    }
+
+    to {
+      transform: translateY(40px) scale(1.6, 1.6);
+    }
+  }
+
+  .pricing_plan_head {
+    width: auto;
+    height: auto;
+
+    h2 {
+      font-size: 30px;
+      color: black;
+      margin:40px 0px 0px;
+    }
+  }
+  .pricing_plan_text {
+    height: auto;
+    width: auto;
+    p {
+      font-size: 18px;
+      color: black;
+      margin: 0;
+    }
+  }
+  .pricing_plan_buttons {
+    height: auto;
+    max-width: auto;
+    display: flex;
+    justify-content: center;
+    margin:20px;
+    background: transparent;
+
+    .radio-inputs {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      border:none;
+      outline: none;
+      background-color: rgb(255, 252, 252);
+      box-sizing: border-box;
+      // box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+      // padding: 0.25rem;
+      width: 300px;
+      font-size: 14px;
+    }
+
+    .radio-inputs .radio {
+      flex: 1 1 auto;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .radio-inputs .radio input {
+      display: none;
+    }
+
+    .radio-inputs .radio .name {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      // border-radius: 0.5rem;
+      border: none;
+      padding: 0.5rem 0;
+      color: rgb(5, 5, 5);
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.15s ease-in-out;
+    }
+
+    .radio-inputs .radio input:checked + .name {
+      background-color: #100f0f;
+      color: white;
+      font-weight: 600;
+    }
+
+    .card_pricing_wrapper {
+      height: auto;
+      width: auto;
+
+      .card_pricing {
+        height: auto;
+        width: 100%;
+        border: 2px solid black;
+      }
+    }
+  }
+
+  .card_pricing_wrapper {
+    height: auto;
+    width: auto;
+    display:flex;
+    // justify-content: center;
+    // align-items: center;
+    margin: 20px;
+    gap: 30px;
+
+    .card_pricing {
+      height:auto;
+      width: 350px;
+      border-radius: 20px;
+      border: 1px solid rgb(160, 158, 158);
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      
+
+      &:hover{
+        box-shadow: 4px 4px 4px rgb(209, 207, 207);
+        background-color: rgb(234, 225, 225);
+        transform: scale(0.95);
+       
+       }
+
+
+      .plan_1 {
+        height: auto;
+        width: auto;
+        margin: 10px;
+
+        p {
+          color: black;
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+      }
+      .plan_1_text {
+        height: auto;
+        width: auto;
+        margin: 0;
+
+        p {
+          color:black;
+          font-size: 18px;
+          margin: 0px;
+          font-weight:400;
+        }
+      }
+
+      .line_1 {
+        height: 2px;
+        width: 80%;
+        background: linear-gradient(gold, orange);
+        margin: 10px auto;
+      }
+
+      .pricing_1 {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .pricing_1_main {
+          color: black;
+          font-size: 50px;
+          font-weight: 600;
+
+          span {
+            color: black;
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+
+        .pricing_1_main_year {
+          color: black;
+          font-size: 20px;
+        }
+      }
+
+      .price_button {
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+        margin: 20px 0px;
+        outline:none;
+        border: 0;
+
+        &:hover{
+          background: rgb(82, 43, 43);
+        }
+       
+      }
+
+      .line_2 {
+        height: 2px;
+        width: 80%;
+        background: linear-gradient(rgb(202, 202, 199), rgb(154, 153, 152));
+        margin: 0px auto;
+      }
+
+      .pricing_features {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin: 20px;
+
+        .features {
+          display: flex;
+          align-items: start;
+          
+          column-gap: 10px;
+
+          .feature_tick {
+            height: 30px;
+           min-width: 30px;
+           max-width:30px;
+
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+          .feature_text {
+            p {
+              color: black;
+              font-size: 18px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
