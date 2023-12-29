@@ -1,11 +1,14 @@
 import React from "react";
 import "./Cardsdesign.scss";
-import img1 from "./images/logo.png";
-import img2 from "./images/success.png";
+import img1 from "../../assets/images/logo.png";
+import img2 from "../../assets/images/success.png";
 
 function Cardsdesign(props) {
   return (
-    <div>
+    <div class="main_pricing">
+      <div class="pricing_page_design">
+        <h3>Subscription Page</h3>
+      </div>
       <div class="main_card_wrapper">
         <div class="card_titles_wrapper">
           <div class="company_logo_img">

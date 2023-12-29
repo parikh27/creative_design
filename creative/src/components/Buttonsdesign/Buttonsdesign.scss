@@ -873,45 +873,45 @@
     text-transform: uppercase;
     position: relative;
     transition: .5s ease;
-  }
-  
-  .button_12::before {
+    &::before {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     height: 2px;
     width: 0;
-    background-color: #ffc506;
+    background-color: #a8a59c;
     transition: .5s ease;
   }
+  &.button_12:hover {
   
-  .button_12:hover {
-    color: #1e1e2b;
+    color:black;
     transition-delay: .5s;
+    z-index: 1;
   }
   
-  .button_12:hover::before {
+  &:hover::before {
     width: 100%;
   }
   
-  .button_12::after {
+  &::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     height: 0;
     width: 100%;
-    background-color: #ffc506;
+    background-color: #b7931c;
     transition: .4s ease;
     z-index: -1;
   }
   
-  .button_12:hover::after {
+  &:hover::after {
     height: 100%;
     transition-delay: 0.4s;
     color: aliceblue;
   }
+}
 }
 
 
